@@ -17,7 +17,7 @@ kmeans_cluster = KMeans(n_clusters=n)
 kmeans_cluster.fit(image_2d)
 cluster_centers = kmeans_cluster.cluster_centers_
 cluster_labels = kmeans_cluster.labels_
-# cgange the clolor of the cluster with a center value of image
+# change the color of the cluster with a center value of image
 for x in range(len(cluster_labels)):
     image_2d[x] = cluster_centers[cluster_labels[x]]
 
